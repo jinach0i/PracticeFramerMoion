@@ -21,14 +21,14 @@ export default function Home() {
             <div className="drawer-content flex flex-col items-center justify-center">
               <label
                 htmlFor="my-drawer-2"
-                className="btn btn-primary drawer-button lg:hidden"
+                className="btn btn-primary drawer-button"
               >
-                목록
+                구경하기
               </label>
             </div>
           </div>
         </div>
-        <div className="drawer lg:drawer-open">
+        <div className="drawer">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
           <div className="drawer-side">
             <label
@@ -38,19 +38,22 @@ export default function Home() {
             ></label>
             <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
               <li>
-                <Link href="/scroll-chcr">문자 단위로 opacity나타나기</Link>
-              </li>
-              <li>
-                <Link href="/scroll-txt">문장 단위로 opacity나타나기</Link>
-              </li>
-              <li>
-                <Link href="/scroll-words">단어 단위로 opacity나타나기</Link>
-              </li>
-              <li>
-                <Link href="/scroll-chcr">문자 단위로 opacity나타나기</Link>
-              </li>
-              <li>
-                <Link href="/scroll-chcr">문자 단위로 opacity나타나기</Link>
+                <a>Scroll+Txt</a>
+                <ul>
+                  <li>
+                    <Link href="/scroll-chcr">문자 단위로 opacity나타나기</Link>
+                  </li>
+                  <hr />
+                  <li>
+                    <Link href="/scroll-txt">문장 단위로 opacity나타나기</Link>
+                  </li>
+                  <hr />
+                  <li>
+                    <Link href="/scroll-words">
+                      단어 단위로 opacity나타나기
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
