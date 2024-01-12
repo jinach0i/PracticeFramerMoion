@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { nanumMyeongjo } from '@/app/ui/fonts';
 import '@/app/ui/globals.css'
+import Header from '@/components/Header'
 import React from 'react'
 
 export const metadata: Metadata = {
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" data-theme="cupcake">
-      <body className={nanumMyeongjo.className}>{children}</body>
+      <body className={nanumMyeongjo.className}>
+        <Header />
+        {children}
+        </body>
     </html>
   )
 }
